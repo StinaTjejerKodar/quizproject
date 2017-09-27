@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-quizzies = [
+quizzes = [
 		{
 			"quiz_number": 1,
 			"name": "Klassiska böcker",
@@ -13,13 +13,16 @@ quizzies = [
 		},
 		{
 			"quiz_number": 3,
-			"name" "Världens mest kända hackare",
+			"name": "Världens mest kända hackare",
 			"description": "Kan du din hackerhistoria?"
 		},
 	]
 
 def startsida(request):
-		return render(request, "startsida.html")
+		context = {
+				"quizzes": quizzes
+		}
+		return render(request, "startsida.html", context)
 
 def quiz(request, quiz_number):
 		return render(request, "quiz.html")
