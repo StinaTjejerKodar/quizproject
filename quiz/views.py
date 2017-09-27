@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def startpage(request):
-		return render(request, "startpage.html")
+def startsida(request):
+		return render(request, "startsida.html")
 
 def quiz(request, quiz_number):
 		return render(request, "quiz.html")
