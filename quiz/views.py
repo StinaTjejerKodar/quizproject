@@ -1,6 +1,22 @@
 from django.shortcuts import render
 
-# Create your views here.
+quizzies = [
+		{
+			"quiz_number": 1,
+			"name": "Klassiska böcker",
+			"description": "Hur bra kan du dina klassiker?"
+		},
+		{
+			"quiz_number":	2,
+			"name": "Största fotbollslagen",
+			"description": "Kan du dina lag"
+		},
+		{
+			"quiz_number": 3,
+			"name" "Världens mest kända hackare",
+			"description": "Kan du din hackerhistoria?"
+		},
+	]
 
 def startsida(request):
 		return render(request, "startsida.html")
