@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(118, 112, 100);
+	font-size: 18pt;
+	font-family: Helvetica;
+	max-width: 900px;
+	margin: 0 auto;
+}
+h1 {
+	color: rgb(29, 35, 31);
+}
+a {
+	color: rgb(43, 72, 80);
+}
+p {
+	border-bottom: 1px solid rgb(255, 211, 140);
+	padding-bottom: 5px;
+}
