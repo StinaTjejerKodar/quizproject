@@ -9,7 +9,12 @@ Resultatsida som visar hu många rätt man hade
 		</head>
 		<body>
 
-		<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+			<h1>Du är klar och fick {{ correct }} av {{ total }}</h1>
+
+			<p><a href="{% url 'start_page' %}">
+    		Till startsidan
+			</a></p>
+
 
 		</body>
 	</html>
