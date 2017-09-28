@@ -14,10 +14,18 @@ En frågesport med en fråga överst och tre svarsalternativ som användaren kom
 			<p>{{ answer1 }}</p>
 			<p>{{ answer2 }}</p>
 			<p>{{ answer3 }}</p>
-			
+
 			<p><a href="{% url 'results_page' quiz_number %}">
     		Nästa
 			</a></p>
+
+		<form action={% csrf_token %}
+
+		"{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+
+		</form>
+
+		<input type="radio" name="answer" value="1" value="2" value="3"> {{ answer1 }}
 
 		</body>
 	</html>

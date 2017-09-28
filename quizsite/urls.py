@@ -1,6 +1,8 @@
+from django.shortcuts import redirect
 from django.contrib import admin
 from django.urls import path
 from quiz import views
+
 
 urlpatterns = [
 	
@@ -13,6 +15,8 @@ urlpatterns = [
 	path("quiz/<int:quiz_number>/results/" , views.results, name="results_page"),
 
 	path('admin/', admin.site.urls),
+
+	path("quiz/<int:quiz_number>/question/<int:question_number>/answer/", views.answer, name="answer_page"),
 	
 	]
 
