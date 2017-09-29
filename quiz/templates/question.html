@@ -1,4 +1,3 @@
-En frågesport med en fråga överst och tre svarsalternativ som användaren kommer att välja mellan
 
 
 <!doctype html>
@@ -11,21 +10,17 @@ En frågesport med en fråga överst och tre svarsalternativ som användaren kom
 		<body>
 
 			<h1>{{ question_number }}. {{ question }}</h1>
-			<p>{{ answer1 }}</p>
-			<p>{{ answer2 }}</p>
-			<p>{{ answer3 }}</p>
+					
 
-			<p><a href="{% url 'results_page' quiz_number %}">
-    		Nästa
-			</a></p>
-
-		<form action={% csrf_token %}
-
-		"{% url "answer_page" quiz.quiz_number question_number %}" method="post">
-
+		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+		{% csrf_token %} 
+		<input type="radio" name="answer" value="1" checked> {{ answer1 }}
+		<input type="radio" name="answer" value="2"> {{ answer2 }}
+		<input type="radio" name="answer" value="3"> {{ answer3 }}
+		<button type="submit">Nästa</button>
 		</form>
 
-		<input type="radio" name="answer" value="1" value="2" value="3"> {{ answer1 }}
+		
 
 		</body>
 	</html>
