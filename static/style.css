@@ -1,17 +1,28 @@
 body {
-	background-color: rgb(118, 112, 100);
-	font-size: 18pt;
+	background-color: rgb(65, 146, 244);
+	font-size: 14pt;
 	font-family: Helvetica;
 	max-width: 900px;
 	margin: 0 auto;
+	text-align: center;
+	font-family: Open Sans, sans-serif;
 }
+
+
+img{
+	max-width: 100%;
+}
+
 h1 {
 	color: rgb(29, 35, 31);
 }
 a {
 	color: rgb(43, 72, 80);
+	background-color: rgb(244, 124, 65);
+	padding: 15px;
+	text-decoration: none;
 }
 p {
-	border-bottom: 1px solid rgb(255, 211, 140);
-	padding-bottom: 5px;
+	border-bottom: 0px solid;
+	padding-bottom: 0px;
 }

@@ -1,20 +1,24 @@
-Quiz om Barca
+
 
 <!doctype html>
 	<html>
 		<head>
 			<title></title>
 			<meta charset = "utf-8">
+			<link href="/static/style.css" rel="stylesheet">
 		
 		</head>
 		<body>
 
 			<h1>{{ quiz.name }}</h1>
 			<p>{{ quiz.description }}</p>
+			<figure>
+			<img src="/static/images/Museum_Catalanyan.gif" alt="Museo Nacional DArt de Catalunya" width="600"> 
 			
+		</figure>
 			<p><a href="{% url 'question_page' quiz_number 1 %}">
    			 Starta
 			</a></p>
-			
+
 		</body>
 	</html>

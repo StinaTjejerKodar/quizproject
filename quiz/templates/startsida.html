@@ -1,23 +1,27 @@
 <!doctype html>
 	<html>
 		<head>
+
 			<title>Quiz testsajt på tjejerkodar</title>
 			<meta charset = "utf-8">
 			<link href="/static/style.css" rel="stylesheet">
+		
+
 		</head>
 		<body>
 			<h1>Vad vet du om Barcelona?</h1>
+
 		<figure>
-			<img src="/static/Museum_Catalanyan.gif" alt="Museo Nacional DArt de Catalunya" width="900"> 
-			<figcaption>Fig1. - A view of the Barcelona from Museo Nacional DArt de Catalunya.</figcaption>
+			<img src="/static/images/Museum_Catalanyan.gif" alt="Museo Nacional DArt de Catalunya" width="900"> 
+			
 		</figure>
-			<p>Här kommer en 
-				<a href="http://google.com"> länk till Google
+	
 
 {% for quiz in quizzes %}
 		<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
         {{ quiz.name }}
    		</a></p>
+   		
 {% endfor %}
 
 		</p>
